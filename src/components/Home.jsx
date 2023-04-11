@@ -16,7 +16,7 @@ const Home = () => {
     }
 
     return (
-        <div className='card'>
+        <div className='card1'>
             <h1>Home</h1>
             <input type="text" value={name} placeholder='Enter the name of Pokemon' onChange={e => setName(e.target.value)} />
             <button onClick={()=> goPokedex()}>Go</button>
