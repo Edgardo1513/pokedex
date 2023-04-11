@@ -26,7 +26,7 @@ const Pokedex = () => {
             <div className='card1'>
             <button onClick={() => navigate(-1)}>Go Back</button>
             <h1>pokedex</h1>{userName}
-            <input type="text" value={search} onChange={(e => setSearch(e.target.value))} />
+            <input type="text" value={search} placeholder='Find the Pokemon Nome' onChange={(e => setSearch(e.target.value))} />
             <button onClick={() => navigate(`/pokedex/${search}`)}>Search</button>
             </div>            
             <GetPokemons pokemons={pokemons} setPokemons={setPokemons} />
